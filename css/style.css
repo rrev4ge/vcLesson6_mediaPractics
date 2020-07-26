@@ -1,11 +1,77 @@
+body {
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /*flex-wrap: wrap;*/
+    min-height: 100vh;
 
+
+}
 .userLoginContainer {
+    display: flex;
+    width: 20%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1%;
+    position: relative;
 
 }
 
-.userLoginLogo {
+.userLoginLogo > img {
+    width: 40%;
+    margin-top: -50px;
+
+
 
 }
 
-.userLoginBlock
+#closeBtn {
+    background: url("../images/close.png");
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border: 0;
+    padding: 0;
+    right: 0;
+    outline: unset;
+
+}
+
+#closeBtn:active {
+    background: none;
+    border: 1px solid black;
+    border-radius: 50%;
+
+}
+
+.userLoginBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em 0;
+
+}
+
+.userLoginBlock input {
+    margin: 1em 0 0;
+}
+
+.userLoginBlock input[type=button] {
+    padding: 1em 0;
+    background-color: limegreen;
+    border: 0;
+    color: white;
+
+}
+
+.userLoginBlock  a{
+    padding: 1em 0;
+    text-decoration: none;
+    color: blue;
+
+
+}
 
